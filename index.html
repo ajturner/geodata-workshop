@@ -1,0 +1,434 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Using Collaborative Web tools for opening access to geospatial data</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+		<link rel="stylesheet" href="css/presentation.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<script>
+			// If the query includes 'print-pdf' we'll use the PDF print sheet
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section class="background">
+					<img src="images/HouseSplat.png" style="width: 100%; height: 100%"/>
+					<span class="text text-middle">
+						<h3>Collaborative GeoData Sharing &amp; Analysis</h3>
+						<em>Workshop at OKFestival 2012</em>
+						<p><br/><br/>
+							Andrew Turner - @ajturner
+							<br /><a href="http://ajturner.github.com/geodata-workshop">ajturner.github.com/geodata-workshop</a>
+						</p>
+						
+					</span>
+
+					<!-- <cite><img src="images/esriGlobeLogo.png" /></cite> -->
+				</section>
+				
+				<section>
+					<section>
+						<h2>Who am I?</h2>
+						<img src="images/EsriUC GeoWeb - Glenn Letham card.jpeg"></img>
+						<ul>
+							<li><a href="http://highearthorbit.com">Andrew Turner</a> / <a href="http://twitter.com/ajturner">@ajturner</a></li>
+							<li><a href="http://highearthorbit.com">http://highearthorbit.com</a></li>
+						</ul>
+
+					</section>
+					<section class="background">
+						<img src="images/opensessame.png" class="image">
+						<span class="text text-bottom">Aerospace Engineer</span>
+					</section>
+					<section>
+						<img src="images/neogeography_book.png">
+					
+						<a href="http://highearthorbit.com/neogeography/book.pdf">http://highearthorbit.com/neogeography/book.pdf</a>
+					</section>
+				</section>
+				<section>
+					<section>
+						<p style="float:right">
+							<img src="images/maplayers.png" />
+						</p>
+						<h3>Power of Place</h3>
+					</section>
+					<section class="background">
+						<img src="images/neighborhood.png" class="image">
+						<span class="text text-bottom">People live and interact with Place</span>
+					</section>
+					<section>
+						<img src="images/journalism/calgaryherald_dogs.png"/>
+						<h3>Calgary Herald - Dog Population</h3>
+					</section>
+					<section>
+						<img src="images/journalism/Toronto Sun - Pedestrian Accidents.jpg"/>
+						<h3>Toronto Sun - Pedestrian Accidents</h3>
+					</section>
+					<section class="background">
+						<img src="images/geocommons_haiti.png" class="image"/>
+						<span class="text text-top">
+							Haiti
+						</span>
+					</section>					
+					<section>
+						<img src="images/journalism/digital_help_haiti.jpg"/>
+						<h3>OpenStreetMap Haiti</h3>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Basic Principles</h3>
+						<ul>
+							<li class="fragment"><img src="images/data.png" class="bullet_image" /><strong>Open Access</strong> to data</li>
+							<li class="fragment"><img src="images/map.png" class="bullet_image" /><strong>Visualize</strong> on maps</li>
+							<li class="fragment"><img src="images/analysis.png" class="bullet_image" /><strong>Analyze</strong> questions</li>
+						</ul>
+					</section>
+					<section>
+						<img src="images/conversations.png" />
+					</section>
+					<section>
+						<img src="images/conversations_circle.png" />
+					</section>
+				</section>
+				
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section class="background">
+						<img src="images/usbdrive.png" class="image"/>
+						<span class="text text-top">
+							<h3><img src="images/data.png" class="bullet_image"/>Access</h3>
+						</span>
+					</section>
+					<section>
+						<h3>Huffman's Principles of Data Sharing</h3>
+						<p  style="float:left; width: 60%">
+							<ol>
+								<li class="fragment">Create immediate value for anyone contributing data</li>
+								<li class="fragment">Make contributor’s data available back to them with improvements</li>
+								<li class="fragment">Share derivative works back with the data sharing community</li>
+							</ol>
+						</p>
+						<p style="float:right">
+							<img src="images/huffman.png" />
+						</p>
+
+						<a href="http://bit.ly/hWKuHO">http://bit.ly/hWKuHO</a>
+					</section>	
+					<section class="background">
+						<img src="images/beer4data.png" class="image"/>
+						<span class="text text-bottom">
+							<h3>#beer4data</h3>
+						</span>
+					</section>						
+					<section class="background">
+						<img src="images/tajmaps.png" class="image"/>
+						<span class="text text-bottom">
+							<h3>"The Taj": Jalalabad, Afghanistan</h3>
+						</span>
+					</section>	
+					<section class="background">
+						<img src="images/caketest.png" class="image"/>
+						<span class="text text-bottom">
+							<h3>Cake Test</h3>
+						</span>
+					</section>						
+				</section>
+				<section>
+					<section class="background">
+						<img src="images/symap 1965 utfgrid.jpg" class="image"/>
+						<span class="text text-bottom">
+							<h3>Types of Data</h3>
+						</span>
+					</section>						
+					<section>
+						<a class="test" href="http://wiki.gis.com/wiki/index.php/Point">
+							<img src="http://wiki.gis.com/wiki/images/thumb/3/34/ACP_3.svg/300px-ACP_3.svg.png" alt="">
+						</a>
+						<h3>Points</h3>
+						<pre><code contenteditable style="margin-top: 20px;">{ "type": "Point", "coordinates": [100.0, 0.0] }
+</code></pre>
+					</section>
+					<section>
+						<a class="test" href="http://wiki.gis.com/wiki/index.php/Polyline">
+							<img src="http://wiki.gis.com/wiki/images/thumb/7/7f/Chainline.svg/600px-Chainline.svg.png" alt="">
+						</a>
+						<h3>Lines</h3>
+						<pre><code contenteditable style="margin-top: 20px;">{ "type": "LineString",
+  "coordinates": [ [100.0, 0.0], [101.0, 1.0] ]
+  }</code></pre>
+					</section>
+					<section>
+						<a href="http://wiki.gis.com/wiki/index.php/Polygon">
+							<img src="http://wiki.gis.com/wiki/images/thumb/1/1f/Assorted_polygons.svg/490px-Assorted_polygons.svg.png" />
+						</a>
+						<h3>Polygons</h3>
+						<pre><code contenteditable style="margin-top: 20px;">{ "type": "Polygon",
+  "coordinates": [
+    [ [100.0, 0.0], [101.0, 0.0], [101.0, 1.0], [100.0, 1.0], [100.0, 0.0] ]
+    ]
+ }
+					</code></pre>
+					</section>			
+					<section class="background">
+						<img src="images/Tourists and Local Photos - walkingsf_4671594023_b41c2ee662_b.jpg" class="image"/>
+						<span class="text text-bottom">
+							<h3>Crowdsourced data</h3>
+						</span>
+						<cite><a href="http://www.flickr.com/photos/walkingsf/sets/72157624209158632">Locals & Tourists</a></cite>
+					</section>
+					<section class="background">
+						<img src="images/osm_helsinki.png" class="image"/>
+						<span class="text text-bottom">
+							<h3><a href="http://openstreetmap.org">OpenStreetMap</a></h3>
+							<p><a href="http://vimeo.com/2598878">year of edits&raquo;</a></p>
+						</span>
+					</section>
+					<section class="background">
+						<img src="images/flickr.png" class="image"/>
+						<span class="text text-bottom">
+							<h3><a href="http://flickr.com/map">Flickr</a></h3>
+						</span>
+					</section>					
+
+					<section>
+						<iframe src="http://player.vimeo.com/video/20491504" width="1000" height="562" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p>
+						<h3><a href="http://twitter.com">Twitter</a></h3>
+					</section>					
+	
+					<section class="background">
+						<img src="images/cartagram.png" class="image"/>
+						<span class="text text-bottom">
+							<h3>Instagram</h3>
+						</span>
+						<cite><a href="http://cartagr.am/">Cartagr.am</a></cite>
+					</section>					
+					<section class="background">
+						<img src="images/New Zealand River - digital globe 6539224455_6fe80d06d6_o.jpg" class="image"/>
+						<span class="text text-bottom">
+							<h3>Imagery</h3>
+						</span>
+					</section>					
+					<section class="background">
+						<img src="images/1888_WDC_Streetcar_Map.JPG" class="image"/>
+						<span class="text text-bottom">
+							<h3>Historic Maps</h3>
+							<p><a href="http://mapwarper.net">mapwarper&raquo;</a></p>
+						</span>
+					</section>
+				</section>
+
+				<!-- <section>
+					<h2>Open Data site litmus test</h2>
+					<p>How do you know if a site is truly an open data site?</p>
+					<p class="fragment">...it has a download button. <a href="http://blog.geoiq.com/2010/06/09/an-open-data-litmus-test-is-there-a-download-button/">&raquo;</a></p>
+				</section> -->
+				<section>
+
+					<section>
+						<h2><img src="images/map.png" class="bullet_image"/>Visualize</h2>
+						<p>Let's Builds some Maps.</p>
+						<ol>
+							<li>Upload Data (and clean it up)</li>
+							<li>Find and Download Data</li>
+							<li>Explore cartographic styling</li>
+							<li>Embed and Share</li>
+						</ol>
+					</section>
+					<section class="background">
+						<img src="images/dcgov.png" class="image"/>
+						<span class="text text-bottom">
+							<h3>Local Government</h3>
+						</span>
+					</section>	
+					<section class="background">
+						<img src="images/osm_helsinki.png" class="image"/>
+						<span class="text text-bottom">
+							<h3>OpenStreetMap</h3>
+							<p><a href="http://vimeo.com/2598878">year of edits&raquo;</a></p>
+						</span>
+					</section>
+					<section>
+						<img src="images/geocommons_concept.png"></img>
+						<h3><a href="http://geocommons.com">GeoCommons</a></h3>
+					</section>
+					<section>
+						<img src="images/ArcGIS Online.png" class="image"/>
+						<span class="text text-bottom">
+							<h3><a href="http://arcgis.com">ArcGIS Online</a></h3>
+						</span>
+					</section>
+
+				</section>
+				<section>
+					<section>
+						<h2><img src="images/analysis.png" class="bullet_image"/>Analyze</h2>
+						<img src="images/analysis_options.png" />
+					</section>
+					<section>
+						<h2>Buffer</h2>
+						<img src="images/analysis_buffer_points.png"></img>
+						<p>Radius buffer from a point, line or polygon</p>
+					</section>
+					<section>
+						<img src="images/analysis_buffer.png"></img>
+						<h2>Buffer</h2>
+						<p>Radius buffer from a point, line or polygon</p>
+					</section>
+					<section>
+						<h2>Intersection</h2>
+						<img src="images/analysis_intersection_points.png"></img>
+						<p>Overlap between two polygonal areas, lines or points</p>
+					</section>
+					<section>
+						<h2>Intersection</h2>
+						<img src="images/analysis_intersection.png"></img>
+						<p>Overlap between two polygonal areas, lines or points</p>
+					</section>
+					<section>
+						<h2>Aggregation</h2>
+						<img src="images/analysis_aggregation_points.png"></img>
+						<p>Group data by arbitrary geographic boundaries</p>
+					</section>
+					<section>
+						<h2>Aggregation</h2>
+						<img src="images/analysis_aggregation.png"></img>
+						<p>Group data by arbitrary geographic boundaries</p>
+					</section>
+				</section>
+				<section>
+					<section class="background">
+						<img src="images/OKFest Dashboard.png" class="image"/>
+						<span class="text text-bottom">
+							<h3>Project: Social Media Dashboard</h3>
+						</span>
+						<cite><a href="http://blogs.esri.com/esri/arcgis/2011/08/04/tools-for-social-media/">Esri Tools for Social Media</a></cite>
+					</section>						
+					<section>
+						<h4>How to create the dashboard</h4>
+						<ul>
+							<li>Start with the <a href="http://www.arcgis.com/home/webmap/viewer.html?webmap=e8a6dd6d26da47a88053e1aec7adbe57">example map</a></li>
+							<li>Customize &amp; Save as...</li>
+							<li>Turn Sharing on</li>
+							<li>Download the <a href="http://www.arcgis.com/home/item.html?id=f9a10a4ca542432ba180309dd5108d5d">Social Media dashboard</a> code</li>
+							<li>Edit the config file - change the search terms</li>
+							<li>Put it on a webserver</li>
+						</ul>
+					</section>
+					<section class="background">
+						<img src="images/OKFest Dashboard.png" class="image"/>
+						<span class="text text-bottom">
+							<a href="http://ajturner.github.com/geodata-workshop/dashboard/">Does it look like this?</a>
+						</span>
+
+					</section>						
+				</section>
+				<section>
+					<section>
+						<h2>More for Developers</h2>
+						<!-- <img src="images/esrigithub.png" style="float: left" /> -->
+						<img src="images/ArcGIS Resources.png" style="float: right"></img>
+						<cite><a href="http://resources.arcgis.com">resources.arcgis.com</a> &amp; <a href="http://esri.github.com">esri.github.com</a></cite>
+					</section>
+				<!-- 	<section class="background">
+						<img src="images/mappingforresults.png" class="image"/>
+						<span class="text text-bottom">
+							<a href="http://maps.worldbank.org">World Bank: Mapping for Results</a>
+						</span>
+					</section>	 -->				
+					<section>
+						<h2>Mapping Tools</h2>
+						<ul>
+							<li><a href="http://mapstraction.com">Mapstraction</a></li>
+							<li><a href="http://leaflet.cloudmade.com/">Leaflet</a></li>
+							<li><a href="https://github.com/Esri/esri.js">esri.js</a></li>
+							<li><a href="http://resources.arcgis.com/">GIS Developer Resources</a></li>
+							<li><a href="http://ajturner.github.com/geodata-workshop">http://ajturner.github.com/geodata-workshop</a></li>
+						</ul>
+					</section>
+				</section>
+				<section class="background">
+					<a href='ma&#105;&#108;to&#58;&#97;nd&#114;%&#54;&#53;&#119;&#64;h&#105;&#103;hea&#114;&#116;%&#54;8orb&#105;%&#55;4&#46;c&#111;%6&#68;'>and&#114;e&#119;&#64;&#104;igheart&#104;&#111;&#114;bit&#46;com</a>
+					<a href="http://ajturner.github.com/geodata-workshop">http://ajturner.github.com/geodata-workshop</a>
+					<img src="http://farm5.staticflickr.com/4009/4672195208_3613338e79_z.jpg" class="image"/>
+					<span class="text text-middle">
+						<h3>Thank you</h3>
+					</span>
+					<cite>Washington, DC - <a href="http://www.flickr.com/photos/walkingsf/4672195208/in/set-72157624209158632">flickr: walkingsf</a></cite>
+				</section>				
+			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Presentation progress bar -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				
+				theme: Reveal.getQueryHash().theme || 'simple', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+					{ src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+				]
+			});
+			
+		</script>
+
+	</body>
+</html>
